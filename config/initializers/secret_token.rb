@@ -9,4 +9,21 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-DoneBiz::Application.config.secret_key_base = 'bcab947670ea47d0f537c555cf6e157cf4b48cdcc70c683093be5679aabc86816ff0dd1d650dd4206f1bbcbf95255046d836adfcd3d8baea49c76b840c8fb947'
+
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+
+DoneBiz::Application.config.secret_key_base = secure_token
