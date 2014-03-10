@@ -1,6 +1,10 @@
+2014-03-11 01:09:37 +0300 samuelralak 
+
+	* added custom css and changed root to static_pages home action #1 (HEAD, feature/1-user-interface)
+
 2014-03-11 01:01:22 +0300 samuelralak 
 
-	* created the static pages controller and associated files #1 (HEAD, feature/1-user-interface)
+	* created the static pages controller and associated files #1
 
 2014-03-11 00:55:12 +0300 samuelralak 
 
