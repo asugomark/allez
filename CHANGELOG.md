@@ -1,6 +1,10 @@
+2014-03-11 01:01:22 +0300 samuelralak 
+
+	* created the static pages controller and associated files #1 (HEAD, feature/1-user-interface)
+
 2014-03-11 00:55:12 +0300 samuelralak 
 
-	* installed the bootstrp-sass gem #1 (HEAD, feature/1-user-interface)
+	* installed the bootstrp-sass gem #1
 
 2014-03-11 00:47:17 +0300 samuelralak 
 
