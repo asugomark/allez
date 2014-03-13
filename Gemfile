@@ -9,6 +9,9 @@ gem 'bootstrap-sass', '3.0.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
+# use devise authentication system
+gem 'devise'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
