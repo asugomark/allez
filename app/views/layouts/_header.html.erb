@@ -15,11 +15,14 @@
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li><%= link_to 'Home', root_path %></li>
+				<li><%= link_to 'Features', '#' %></li>
+				<li><%= link_to 'About Us', '#' %></li>
+				<li><%= link_to 'Blog', '#' %></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
-			  	<li id="sign-in"><%= link_to 'Sign In', '#'%></li>
-			  	<li id="sign-up"><%= link_to 'Sign Up', '#'%></li>
+			  	<li id="sign-in"><%= link_to 'Sign In', signin_path %></li>
+			  	<li id="sign-up"><%= link_to 'Sign Up', signup_path %></li>
 			  
 			  	<!-- Search Button -->
 			  	<li id="search">
