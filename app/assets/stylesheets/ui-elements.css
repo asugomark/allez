@@ -1,0 +1,440 @@
+/*------------------------------------------------------------------
+Project:	Mist
+Version:	1.1
+Created: 		27/11/2013
+Last change:	12/01/2014
+-------------------------------------------------------------------*/
+
+/* =====  Links ===== */
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/*===== Titles =====*/
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== Buttons ===== */
+
+.btn {
+	border-radius: 3px;
+}
+.btn-xxl {
+	padding: 14px 28px;
+}
+
+/* ====== Helper Classes ===== */
+
+.logo:after {
+	content: ".";
+}
+.text-muted {
+	color: #95a5a6;
+}
+.text-silver {
+	color: #ecf0f1;
+}
+.text-white {
+	color: #FFF;
+}
+hr.double-margin {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.heading {
+	margin-top: 60px;
+}
+.lh {
+	line-height: 22px;
+}
+.absolute {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.pull-right-xs {
+	float: right;
+}
+@media (max-width: 767px) {
+	.pull-right-xs {
+		float: left;
+	}
+}
+.text-right-xs {
+	text-align: right;
+}
+@media (max-width: 767px) {
+	.text-right-xs {
+		text-align: left;
+	}
+}
+.text-center-xs {
+	text-align: left;
+}
+@media (max-width: 767px) {
+	.text-center-xs {
+		text-align: center;
+	}
+}
+hr.inverse {
+	border-color: #DDD;
+}
+.oswald {
+	font-family: 'Oswald', sans-serif;
+}
+h2.oswald {
+	line-height: 1.5em;
+}
+
+/* ===== Animations ===== */
+
+@media (max-width: 767px) {
+	.animated {
+	  -webkit-animation: none !important;
+	  -moz-animation: none !important;		
+	}
+}
+.delay1 {
+	-webkit-animation-delay: 0.25s;
+	-moz-animation-delay: 0.25s;
+}
+.delay2 {
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+}
+.delay3 {
+	-webkit-animation-delay: 0.75s;
+	-moz-animation-delay: 0.75s;
+}
+.delay4 {
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+}
+.delay5 {
+	-webkit-animation-delay: 1.25s;
+	-moz-animation-delay: 1.25s;
+}
+.delay6 {
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+}
+.delay7 {
+	-webkit-animation-delay: 1.75s;
+	-moz-animation-delay: 1.75s;
+}
+.delay8 {
+	-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+}
+.delay9 {
+	-webkit-animation-delay: 2.25s;
+	-moz-animation-delay: 2.25s;
+}
+.delay10 {
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-delay: 2.5s;
+}
+.note {
+	-webkit-animation-delay: 5s;
+	-moz-animation-delay: 5s;
+}
+
+/* ===== Scroll to Top ===== */
+
+.backtotop {
+	background: #7f8c8d;
+	padding: 10px 15px;
+	font-size: 18px;
+	color: #FFF;
+	border-radius: 3px;
+}
+.backtotop:hover {
+	background: #95a5a6;
+}
+
+/* ===== New ===== */
+
+.new:after {
+	content: "NEW!";
+	font-size: 0.6em;
+	color: #FFF;
+	background: #f1c40f;
+	padding: 3px 4px;
+	margin-left: 5px;
+	vertical-align: super;
+}
+
+/* ====== Tags ===== */
+
+.tags > a {
+    padding: 3px 4px;
+    margin: 4px 4px 4px 0;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 12px;
+    white-space: nowrap;
+    display: inline-block;
+}
+.tags > a:before {
+	font-family: FontAwesome;
+	content: "\f02b";
+	color: #FFF;
+	margin-right: 5px;
+}
+
+/* ===== Pagination ===== */
+
+.body-green .pagination > .active > a,
+.body-green .pagination > .active > span,
+.body-green .pagination > .active > a:hover,
+.body-green .pagination > .active > span:hover,
+.body-green .pagination > .active > a:focus,
+.body-green .pagination > .active > span:focus {
+  background-color: #27ae60;
+  border-color: #27ae60;
+}
+.body-blue .pagination > .active > a,
+.body-blue .pagination > .active > span,
+.body-blue .pagination > .active > a:hover,
+.body-blue .pagination > .active > span:hover,
+.body-blue .pagination > .active > a:focus,
+.body-blue .pagination > .active > span:focus {
+  background-color: #3498db;
+  border-color: #3498db;
+}
+.body-red .pagination > .active > a,
+.body-red .pagination > .active > span,
+.body-red .pagination > .active > a:hover,
+.body-red .pagination > .active > span:hover,
+.body-red .pagination > .active > a:focus,
+.body-red .pagination > .active > span:focus {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.body-amethyst .pagination > .active > a,
+.body-amethyst .pagination > .active > span,
+.body-amethyst .pagination > .active > a:hover,
+.body-amethyst .pagination > .active > span:hover,
+.body-amethyst .pagination > .active > a:focus,
+.body-amethyst .pagination > .active > span:focus {
+  background-color: #9b59b6;
+  border-color: #9b59b6;
+}
+
+/* ===== Responsive Video =====*/
+
+.flex-video {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+ 
+.flex-video.widescreen { padding-bottom: 57.25%; }
+.flex-video.vimeo { padding-top: 0; }
+ 
+.flex-video iframe,
+.flex-video object,
+.flex-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  .flex-video { padding-top: 0; }
+}
+
+/* ===== Section headers ===== */
+
+.section-header {
+	background: #f5f5f5;
+	border-bottom: 1px solid #dedede;
+	padding: 15px 0;
+	margin-bottom: 50px;
+	margin-top: -25px;
+}
+.section-header h1 {
+	color: #666;
+	font-size: 16px;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+}
+.section-header h1 span {
+	border-bottom: 5px solid #00B4FF;
+	padding-bottom: 10px;
+}
+
+/* ===== Social links ===== */
+
+.social-icons {
+	margin-bottom: 15px;
+}
+.social-icons ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.social-icons ul li {
+	text-align: center;
+	float: left;
+	margin: 0 5px 5px 0;
+	opacity: 0.5;
+	transition: 0.1s;
+	-webkit-transition: 0.1s;
+	-moz-transition: 0.1s;
+}
+.social-icons-small ul li {
+	height: 20px;
+	width: 20px;
+	font-size: 16px;
+	line-height: 20x;
+}
+.social-icons-default ul li {
+	height: 30px;
+	width: 30px;
+	font-size: 22px;
+	line-height: 30px;
+}
+.social-icons-large ul li {
+	height: 40px;
+	width: 40px;
+	font-size: 28px;
+	line-height: 40x;
+}
+.social-icons ul li:hover {
+	opacity: 1;
+	transition: 0.1s;
+	-webkit-transition: 0.1s;
+	-moz-transition: 0.1s;
+}
+.social-icons ul li a {
+	color: #FFF;
+	display: block;
+}
+.social-icons ul li.rss {
+	background: #ff9900;
+}
+.social-icons ul li.facebook {
+	background: #3B5998;
+}
+.social-icons ul li.twitter {
+	background: #1dcaff;
+}
+.social-icons ul li.plus {
+	background: #dd4b39;
+}
+.social-icons ul li.vk {
+	background: #3f628a;
+}
+.social-icons ul li.pinterest {
+	background: #c92026;
+}
+.social-icons ul li.vimeo {
+	background: #446d82;
+}
+.social-icons ul li.github {
+	background: #657e8c;
+}
+.social-icons ul li.linkedin {
+	background: #0c7bb3;
+}
+.social-icons ul li.dropbox {
+	background: #4fa3e3;
+}
+
+/* ===== Buttons ===== */
+
+.hl-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.hl-btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.hl-btn:hover,
+.hl-btn:focus {
+  color: #333333;
+  text-decoration: none;
+}
+.hl-btn:active,
+.hl-btn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.hl-btn.disabled,
+.hl-btn[disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* 1. Default Button */
+
+.hl-btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.hl-btn-default:hover,
+.hl-btn-default:focus,
+.hl-btn-default:active,
+.hl-btn-default.active,
+.hl-open .dropdown-toggle.btn-default {
+  color: #333333;
+  background-color: #ebebeb;
+  border-color: #adadad;
+}
+.hl-btn-default:active,
+.hl-btn-default.active,
+.open .dropdown-toggle.hl-btn-default {
+  background-image: none;
+}
+.hl-btn-default.disabled,
+.hl-btn-default[disabled],
+fieldset[disabled] .hl-btn-default,
+.hl-btn-default.disabled:hover,
+.hl-btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.hl-btn-default.disabled:focus,
+.hl-btn-default[disabled]:focus,
+fieldset[disabled] .hl-btn-default:focus,
+.hl-btn-default.disabled:active,
+.hl-btn-default[disabled]:active,
+fieldset[disabled] .hl-btn-default:active,
+.hl-btn-default.disabled.active,
+.hl-btn-default[disabled].active,
+fieldset[disabled] .hl-btn-default.active {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
