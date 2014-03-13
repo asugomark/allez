@@ -1,6 +1,10 @@
+2014-03-13 13:05:24 +0300 samuelralak 
+
+	* fixes #1 (HEAD, feature/1-user-interface)
+
 2014-03-13 12:57:58 +0300 samuelralak 
 
-	* created the contact us page #1 (HEAD, feature/1-user-interface)
+	* created the contact us page #1 (origin/feature/1-user-interface)
 
 2014-03-13 11:38:08 +0300 samuelralak 
 
