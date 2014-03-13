@@ -1,6 +1,10 @@
+2014-03-13 12:57:58 +0300 samuelralak 
+
+	* created the contact us page #1 (HEAD, feature/1-user-interface)
+
 2014-03-13 11:38:08 +0300 samuelralak 
 
-	* set up the home page ui #1 (HEAD, feature/1-user-interface)
+	* set up the home page ui #1
 
 2014-03-11 01:09:37 +0300 samuelralak 
 
