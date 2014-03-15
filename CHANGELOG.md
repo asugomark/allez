@@ -1,10 +1,26 @@
+2014-03-15 13:36:44 +0300 samuelralak 
+
+	* fixes #3 (HEAD, feature/3-user-sign-up)
+
+2014-03-13 22:33:24 +0300 samuelralak 
+
+	* configured routes for the sign in and sign up page #3
+
+2014-03-13 13:45:11 +0300 samuelralak 
+
+	* created devise user and associated files #3 (origin/feature/3-user-sign-up)
+
+2014-03-13 13:17:53 +0300 samuelralak 
+
+	* installed devise gem #3
+
 2014-03-13 13:05:24 +0300 samuelralak 
 
-	* fixes #1 (HEAD, feature/1-user-interface)
+	* fixes #1 (origin/feature/1-user-interface, origin/develop, feature/1-user-interface, develop)
 
 2014-03-13 12:57:58 +0300 samuelralak 
 
-	* created the contact us page #1 (origin/feature/1-user-interface)
+	* created the contact us page #1
 
 2014-03-13 11:38:08 +0300 samuelralak 
 
@@ -24,7 +40,7 @@
 
 2014-03-11 00:47:17 +0300 samuelralak 
 
-	* added code to dynamically generate secret token (origin/master, origin/develop, master, develop)
+	* added code to dynamically generate secret token
 
 2014-03-11 00:43:19 +0300 samuelralak 
 

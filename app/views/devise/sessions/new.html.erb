@@ -1,0 +1,73 @@
+<!-- Page tip -->
+<div class="page-tip animated slideInDown">
+	<div class="container">
+	    <div class="row">
+		  	<div class="col-sm-12">
+				<p>Please sign in before you proceed. If you are not a member, <a href="sign-up.html">create an account</a>.</p>
+		  	</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+	    <div class="col-md-8 col-sm-6">
+		  	<h3 class="hl top-zero">Sign in to <span class="logo">donebiz</span>com</h3>
+		  	<hr>
+		  	<p>Our site supports several methods to verify your identity. Sign in to get instant access to all of our features.</p>
+
+		  	<!-- Social icons -->
+		  	<div class="login-social">
+		    	<ul>
+			  		<li id="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+			  		<li id="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+			  		<li id="google"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				</ul>
+		  	</div>
+
+		  	<div class="clearfix"></div>
+		</div>
+
+		<!-- Login Box -->
+	    <div class="col-md-4 col-sm-6">
+		  	<div class="form-box">
+		    	<h4>Sign In</h4>
+				<hr>
+				<!--
+				<p class="notice"><%= notice %></p>
+       			<p class="alert"><%= alert %></p>
+       			-->
+				<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+
+			  		<div class="form-group">
+			    		<%= f.label :email, options={class: "sr-only", for: "exampleInputEmail1"} %>
+			    		<%= f.email_field :email, :autofocus => true, placeholder: "Enter email", class: "form-control"  %>
+			  		</div>
+
+			  		<div class="form-group">
+			  			<%= f.label :password, options={class: "sr-only", for: "exampleInputPassword1"} %>
+			    		<%= f.password_field :password, placeholder: "Password", class: "form-control"%>
+			  		</div>
+
+			  		<div class="checkbox">
+						<label>
+							<% if devise_mapping.rememberable? -%>
+    							<div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+  							<% end -%>
+
+						</label>
+			  		</div>
+
+			  		<%= f.submit "Sign in", class: "btn btn-block btn-color btn-xxl" %>
+
+				<% end %>
+
+				<hr>
+				
+				<%= render "devise/shared/links" %>
+
+		  	</div>
+		</div>
+	</div>
+</div>
+
