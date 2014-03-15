@@ -1,6 +1,10 @@
+2014-03-15 13:36:44 +0300 samuelralak 
+
+	* fixes #3 (HEAD, feature/3-user-sign-up)
+
 2014-03-13 22:33:24 +0300 samuelralak 
 
-	* configured routes for the sign in and sign up page #3 (HEAD, feature/3-user-sign-up)
+	* configured routes for the sign in and sign up page #3
 
 2014-03-13 13:45:11 +0300 samuelralak 
 
