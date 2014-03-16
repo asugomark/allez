@@ -1,6 +1,10 @@
+2014-03-16 21:54:38 +0300 samuelralak 
+
+	* added contact person and name attributes to the User model #4 (HEAD, feature/4-user-sign-in)
+
 2014-03-16 21:53:28 +0300 samuelralak 
 
-	* added the county model and associated files #4 (HEAD, feature/4-user-sign-in)
+	* added the county model and associated files #4
 
 2014-03-16 21:52:15 +0300 samuelralak 
 
