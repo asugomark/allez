@@ -1,6 +1,10 @@
+2014-03-16 21:44:20 +0300 samuelralak 
+
+	* removed the alert and notice elements #4 (HEAD, feature/4-user-sign-in)
+
 2014-03-16 21:43:16 +0300 samuelralak 
 
-	* created the counties table and added seed data #4 (HEAD, feature/4-user-sign-in)
+	* created the counties table and added seed data #4
 
 2014-03-16 21:42:03 +0300 samuelralak 
 
