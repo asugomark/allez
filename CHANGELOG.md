@@ -1,6 +1,10 @@
+2014-03-16 21:55:19 +0300 samuelralak 
+
+	* added is_active attribute to county model #4 (HEAD, feature/4-user-sign-in)
+
 2014-03-16 21:54:38 +0300 samuelralak 
 
-	* added contact person and name attributes to the User model #4 (HEAD, feature/4-user-sign-in)
+	* added contact person and name attributes to the User model #4
 
 2014-03-16 21:53:28 +0300 samuelralak 
 
