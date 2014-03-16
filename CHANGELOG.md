@@ -1,6 +1,10 @@
+2014-03-16 18:05:17 +0300 samuelralak 
+
+	* updated gemfile.lock (HEAD, master)
+
 2014-03-16 18:01:18 +0300 samuelralak 
 
-	* stated ruby version in gemfile (HEAD, master)
+	* stated ruby version in gemfile (origin/master)
 
 2014-03-15 13:36:44 +0300 samuelralak 
 
