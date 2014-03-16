@@ -1,6 +1,10 @@
+2014-03-16 21:51:26 +0300 samuelralak 
+
+	* added a signout link #4 (HEAD, feature/4-user-sign-in)
+
 2014-03-16 21:48:06 +0300 samuelralak 
 
-	* added route for the sign out path #4 (HEAD, feature/4-user-sign-in)
+	* added route for the sign out path #4
 
 2014-03-16 21:44:20 +0300 samuelralak 
 

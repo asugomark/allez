@@ -21,8 +21,14 @@
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
-			  	<li id="sign-in"><%= link_to 'Sign In', signin_path %></li>
-			  	<li id="sign-up"><%= link_to 'Sign Up', signup_path %></li>
+				<% if user_signed_in? %>
+
+					<li id="sign-out"><%= link_to 'Sign Out', signout_path %></li>
+				  	
+				<% else %>
+					<li id="sign-in"><%= link_to 'Sign In', signin_path %></li>
+				  	<li id="sign-up"><%= link_to 'Sign Up', signup_path %></li>
+				<% end %>
 			  
 			  	<!-- Search Button -->
 			  	<li id="search">
