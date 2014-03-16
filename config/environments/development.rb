@@ -23,8 +23,8 @@ DoneBiz::Application.configure do
 	  :address        => 'smtp.sendgrid.net',
 	  :port           => '587',
 	  :authentication => :plain,
-	  :user_name      => 'app21343399@heroku.com',
-	  :password       => 's2qeaxoa',
+	  :user_name      => 'app23078798@heroku.com',
+	  :password       => 'lttnsxgl',
 	  :domain         => 'heroku.com',
 	  :enable_starttls_auto => true
   }
