@@ -1,10 +1,14 @@
+2014-03-16 18:20:05 +0300 samuelralak 
+
+	* uncommented config.secret_key (HEAD, master)
+
 2014-03-16 18:05:17 +0300 samuelralak 
 
-	* updated gemfile.lock (HEAD, master)
+	* updated gemfile.lock (origin/master, heroku/master)
 
 2014-03-16 18:01:18 +0300 samuelralak 
 
-	* stated ruby version in gemfile (origin/master)
+	* stated ruby version in gemfile
 
 2014-03-15 13:36:44 +0300 samuelralak 
 
