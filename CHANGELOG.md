@@ -1,6 +1,10 @@
+2014-03-16 21:40:27 +0300 samuelralak 
+
+	* configured permitted parameters for devise registration #4 (HEAD, feature/4-user-sign-in)
+
 2014-03-16 18:41:59 +0300 samuelralak 
 
-	* configured actionmailer for development envronment (HEAD, feature/4-user-sign-in)
+	* configured actionmailer for development envronment
 
 2014-03-15 13:36:44 +0300 samuelralak 
 
