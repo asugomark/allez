@@ -1,6 +1,10 @@
+2014-03-16 21:52:15 +0300 samuelralak 
+
+	* added input fields for name, contact_person and county #4 (HEAD, feature/4-user-sign-in)
+
 2014-03-16 21:51:26 +0300 samuelralak 
 
-	* added a signout link #4 (HEAD, feature/4-user-sign-in)
+	* added a signout link #4
 
 2014-03-16 21:48:06 +0300 samuelralak 
 
