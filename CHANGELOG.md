@@ -1,6 +1,10 @@
+2014-03-16 21:43:16 +0300 samuelralak 
+
+	* created the counties table and added seed data #4 (HEAD, feature/4-user-sign-in)
+
 2014-03-16 21:42:03 +0300 samuelralak 
 
-	* configured action mailer parameters for development environmment #4 (HEAD, feature/4-user-sign-in)
+	* configured action mailer parameters for development environmment #4
 
 2014-03-16 21:40:27 +0300 samuelralak 
 

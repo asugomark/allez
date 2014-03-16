@@ -1,7 +1,19 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+#Create the counties seed
+
+counties = [
+			"Mombasa","Kwale","Kilifi","Tana River","Lamu","Taita-Taveta","Garissa",
+			"Wajir","Mandera","Marsabit","Isiolo","Meru","Tharaka-Nithi","Embu","Kitui",
+			"Machakos","Makueni","Nyandarua","Nyeri","Kirinyaga","Murang'a","Kiambu",
+			"Turkana","West Pokot","Samburu","Trans Nzoia","Uasin Gishu","Elgeyo-Marakwet",
+			"Nandi","Baringo","Laikipia","Nakuru","Narok","Kajiado","Kericho","Bomet",
+			"Kakamega","Vihiga","Bungoma","Busia","Siaya","Kisumu","Homa Bay","Migori",
+			"Kisii","Nyamira","Nairobi"
+		]
+
+counties.map { |county|  
+	County.create!(
+		name: county,
+		code: county.upcase.gsub(' ', '-'),
+		is_active: true
+		)
+}
