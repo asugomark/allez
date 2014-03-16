@@ -1,6 +1,10 @@
+2014-03-16 18:01:18 +0300 samuelralak 
+
+	* stated ruby version in gemfile (HEAD, master)
+
 2014-03-15 13:36:44 +0300 samuelralak 
 
-	* fixes #3 (HEAD, feature/3-user-sign-up)
+	* fixes #3 (origin/feature/3-user-sign-up, feature/3-user-sign-up)
 
 2014-03-13 22:33:24 +0300 samuelralak 
 
@@ -8,7 +12,7 @@
 
 2014-03-13 13:45:11 +0300 samuelralak 
 
-	* created devise user and associated files #3 (origin/feature/3-user-sign-up)
+	* created devise user and associated files #3
 
 2014-03-13 13:17:53 +0300 samuelralak 
 
@@ -16,7 +20,7 @@
 
 2014-03-13 13:05:24 +0300 samuelralak 
 
-	* fixes #1 (origin/feature/1-user-interface, origin/develop, feature/1-user-interface, develop)
+	* fixes #1 (origin/feature/1-user-interface, origin/develop, feature/1-user-interface)
 
 2014-03-13 12:57:58 +0300 samuelralak 
 
