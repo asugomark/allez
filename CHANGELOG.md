@@ -1,10 +1,14 @@
+2014-03-16 18:26:16 +0300 samuelralak 
+
+	* precompile assets on production (HEAD, master)
+
 2014-03-16 18:20:05 +0300 samuelralak 
 
-	* uncommented config.secret_key (HEAD, master)
+	* uncommented config.secret_key (origin/master, heroku/master)
 
 2014-03-16 18:05:17 +0300 samuelralak 
 
-	* updated gemfile.lock (origin/master, heroku/master)
+	* updated gemfile.lock
 
 2014-03-16 18:01:18 +0300 samuelralak 
 
