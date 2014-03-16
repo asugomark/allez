@@ -1,6 +1,10 @@
+2014-03-16 21:53:28 +0300 samuelralak 
+
+	* added the county model and associated files #4 (HEAD, feature/4-user-sign-in)
+
 2014-03-16 21:52:15 +0300 samuelralak 
 
-	* added input fields for name, contact_person and county #4 (HEAD, feature/4-user-sign-in)
+	* added input fields for name, contact_person and county #4
 
 2014-03-16 21:51:26 +0300 samuelralak 
 
