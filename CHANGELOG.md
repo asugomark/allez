@@ -1,6 +1,10 @@
+2014-03-17 04:50:36 +0300 samuelralak 
+
+	* styled the sign up page #4 (HEAD, feature/4-user-sign-in)
+
 2014-03-16 21:55:19 +0300 samuelralak 
 
-	* added is_active attribute to county model #4 (HEAD, feature/4-user-sign-in)
+	* added is_active attribute to county model #4
 
 2014-03-16 21:54:38 +0300 samuelralak 
 
