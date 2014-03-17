@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140316181221) do
+ActiveRecord::Schema.define(version: 20140317121828) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "account_types", force: true do |t|
+    t.string   "name"
+    t.string   "code"
+    t.boolean  "is_active"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "counties", force: true do |t|
     t.string   "name"
@@ -42,10 +50,11 @@ ActiveRecord::Schema.define(version: 20140316181221) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "county_id"
-    t.string   "contact_person"
     t.string   "name"
+    t.integer  "account_type_id"
   end
 
+  add_index "users", ["account_type_id"], name: "index_users_on_account_type_id", using: :btree
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
   add_index "users", ["county_id"], name: "index_users_on_county_id", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

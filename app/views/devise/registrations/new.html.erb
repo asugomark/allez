@@ -22,24 +22,24 @@
 
 			  		<%= devise_error_messages! %>
 
-			    	<div class="form-group">
-			    		<%= f.label :name, options={class: "sr-only", for: "exampleInputName1"} %>
-			    		<%= f.text_field :name, :autofocus => true, placeholder: "Enter name", class: "form-control"  %>
-			    	</div>
-
-			    	<div class="form-group">
-			    		<%= f.label :contact_person, options={class: "sr-only", for: "exampleInputName1"} %>
-			    		<%= f.text_field :contact_person, :autofocus => true, placeholder: "Contact Person", class: "form-control"  %>
-			    	</div>
-
-			    	<div class="form-group">
-			    		<%= f.label :email, options={class: "sr-only", for: "exampleInputEmail1"} %>
-			    		<%= f.email_field :email, :autofocus => true, placeholder: "Enter email", class: "form-control"  %>
+			  		<div class="form-group">
+			    		<%= f.label :account_type, options={class: "sr-only", for: "exampleInputAccountType1"} %>
+			    		<%= f.collection_select :account_type_id, AccountType.all, :id, :name, {prompt: 'Account Type'}, class: 'form-control' %>
 			  		</div>
 
 			  		<div class="form-group">
 			    		<%= f.label :county, options={class: "sr-only", for: "exampleInputCounty1"} %>
 			    		<%= f.collection_select :county_id, County.all, :id, :name, {prompt: 'Select County'}, class: 'form-control' %>
+			  		</div>
+
+			    	<div class="form-group">
+			    		<%= f.label :name, options={class: "sr-only", for: "exampleInputName1"} %>
+			    		<%= f.text_field :name, :autofocus => true, placeholder: "Your account name", class: "form-control"  %>
+			    	</div>
+
+			    	<div class="form-group">
+			    		<%= f.label :email, options={class: "sr-only", for: "exampleInputEmail1"} %>
+			    		<%= f.email_field :email, :autofocus => true, placeholder: "Your email", class: "form-control"  %>
 			  		</div>
 
 			  		<div class="form-group">
