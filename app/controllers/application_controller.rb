@@ -5,11 +5,23 @@ class ApplicationController < ActionController::Base
 
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
+  # Redirect to user profile page after successful sign in
+  def after_sign_in_path_for(resource)
+  	user_path(current_user)
+  end
+
+  private
+
+  # Redirect to sifn in page after successful sign out
+  def after_sign_out_path_for(resource_or_scope)
+  	new_user_session_path
+  end
+
   protected
   
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:sign_up) { |u| 
-    	u.permit(:name, :account_type_id, :email, :password, :password_confirmation, :county_id) 
+    	u.permit(:name, :account_type_id, :email, :password, :password_confirmation, :county_id, :agree) 
     }
   end
 end

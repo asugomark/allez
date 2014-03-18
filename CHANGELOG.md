@@ -1,6 +1,10 @@
+2014-03-18 18:24:55 +0300 samuelralak 
+
+	* fixes #4 (HEAD, feature/4-user-sign-in)
+
 2014-03-18 18:22:03 +0300 samuelralak 
 
-	* added fontawesome svg file and associated style sheets #4 (HEAD, feature/4-user-sign-in)
+	* added fontawesome svg file and associated style sheets #4
 
 2014-03-18 18:21:03 +0300 samuelralak 
 

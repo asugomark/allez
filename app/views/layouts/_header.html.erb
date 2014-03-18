@@ -16,34 +16,61 @@
 			<ul class="nav navbar-nav">
 				<li><%= link_to 'Home', root_path %></li>
 				<li><%= link_to 'Features', '#' %></li>
-				<li><%= link_to 'About Us', '#' %></li>
-				<li><%= link_to 'Blog', '#' %></li>
+				<li><%= link_to 'Price Plan', '#' %></li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-right">
 				<% if user_signed_in? %>
+					<li><%= link_to '', '#', class: "glyphicon glyphicon-globe" %></li>
+					<li><%= link_to '', '#', class: "glyphicon glyphicon-inbox" %></li>
+					<li><%= link_to '', '#', class: "glyphicon glyphicon-bell" %></li>
+					<li class="dropdown">
+	            		<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+	            			<%= current_user.email %> <b class="caret"></b>
+	            		</a>
 
-					<li id="sign-out"><%= link_to 'Sign Out', signout_path %></li>
+	            		<ul class="dropdown-menu">
+	            			<li class="account">
+	            				<div class="avatar"></div>
+	            				<p>
+	            					<span class="glyphicon glyphicon-user"></span>
+	            					<%= link_to "Profile", user_path(current_user) %>
+	            				</p>
+	            				<p>
+	            					<span class="glyphicon glyphicon-cog"></span>
+	            					<%= link_to "Settings", '#' %>
+	            				</p>
+	            				<hr />
+	            				<p>
+	            					<span class="glyphicon glyphicon-log-out"></span>
+	            					<%= link_to 'Sign Out', destroy_user_session_path, method: "delete" %>
+	            				</p>
+	            				<div class="clearfix"></div>
+	            			</li>
+	            		</ul>
+
+            		</li>
+
+					<!-- Search Button -->
+			  		<li id="search">
+						<div class="search-box" id="search-box">
+				  			<div class="input-group">
+								<input type="text" class="form-control" placeholder="Search">
+								<span class="input-group-btn">
+					  				<button class="btn btn-color" type="button">Go!</button>
+								</span>
+				  			</div>
+						</div>
+			  		</li>
 				  	
 				<% else %>
-					<li id="sign-in"><%= link_to 'Sign In', signin_path %></li>
-				  	<li id="sign-up"><%= link_to 'Sign Up', signup_path %></li>
+
+					<li id="sign-in"><%= link_to 'Sign In', new_user_session_path %></li>
+				  	<li id="sign-up"><%= link_to 'Sign Up', new_user_registration_path %></li>
+
 				<% end %>
 			  
-			  	<!-- Search Button -->
-			  	<li id="search">
-					<a href="#" id="search-btn"><i class="fa fa-search" id="search-icon"></i> Search</a>
-
-					<div class="search-box hidden" id="search-box">
-				  		<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search">
-							<span class="input-group-btn">
-					  			<button class="btn btn-default" type="button">Go!</button>
-							</span>
-				  		</div>
-					</div>
-
-			  	</li>
+			  	
 
 			</ul>
 
