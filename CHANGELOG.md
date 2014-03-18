@@ -1,6 +1,10 @@
+2014-03-18 23:12:31 +0300 samuelralak 
+
+	* configured ActionMailer for production environment (HEAD, master)
+
 2014-03-18 23:11:24 +0300 samuelralak 
 
-	* Refactored section-header and page tip (HEAD, master)
+	* Refactored section-header and page tip
 
 2014-03-18 23:05:59 +0300 samuelralak 
 
