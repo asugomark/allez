@@ -1,6 +1,10 @@
+2014-03-18 23:13:05 +0300 samuelralak 
+
+	* styled devise error messages, alerts and notices (HEAD, master)
+
 2014-03-18 23:12:31 +0300 samuelralak 
 
-	* configured ActionMailer for production environment (HEAD, master)
+	* configured ActionMailer for production environment
 
 2014-03-18 23:11:24 +0300 samuelralak 
 

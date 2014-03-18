@@ -1,0 +1,52 @@
+<% if controller_name != 'sessions' && controller_name != 'registrations' && controller_name != 'confirmations' && controller_name != 'passwords' %>
+	
+	<!-- Section Header -->
+	<div class="section-header">
+		<div class="container">
+	    	<div class="row">
+	      		<div class="col-md-12">
+
+	      			<% if controller_name == 'static_pages' %>
+						<h1>
+							<span><%= action_name %></span>
+						</h1>
+					<% end %>
+
+					<% if current_page?(controller: 'users', action: 'show') %>
+
+						<h1>
+							<span>Profile</span>
+						</h1>
+						
+					<% end %>
+
+		  		</div>
+			</div>
+	  	</div>
+    </div>
+
+<% else %>
+	<!-- Page tip -->
+	<div class="page-tip">
+		<div class="container">
+	    	<div class="row">
+		  		<div class="col-sm-12">
+
+		  			<% if current_page?(controller: 'devise/sessions', action: 'new') %>
+						<p>
+							Please sign in before you proceed. If you are not a member, <%= link_to 'create an account', new_user_registration_path %>.
+						</p>
+					<% end %>
+
+					<% if current_page?(controller: 'devise/registrations', action: 'new') %>
+						<p>
+							<p>Please sign up to access all our features. Already a member? <%= link_to 'sign in here', new_user_session_path %>.</p>
+						</p>
+					<% end %>
+
+		  		</div>
+			</div>
+		</div>
+	</div>
+
+<% end %>
