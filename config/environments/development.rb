@@ -23,16 +23,25 @@ DoneBiz::Application.configure do
 	  :address        => 'smtp.sendgrid.net',
 	  :port           => '587',
 	  :authentication => :plain,
+<<<<<<< HEAD
 	  :user_name      => 'app21343399@heroku.com',
 	  :password       => 's2qeaxoa',
+=======
+	  :user_name      => 'app23078798@heroku.com',
+	  :password       => 'lttnsxgl',
+>>>>>>> develop
 	  :domain         => 'heroku.com',
 	  :enable_starttls_auto => true
   }
   ActionMailer::Base.delivery_method = :smtp
+<<<<<<< HEAD
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   config.action_mailer.asset_host = "http://localhost:3000"
 
+=======
+>>>>>>> develop
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.asset_host = "http://localhost:3000"
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

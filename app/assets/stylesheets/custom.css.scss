@@ -184,7 +184,7 @@ body {
   margin-bottom: 15.5px;
 }
 .navbar-brand {
-  padding: 11px 15px;
+  padding: 7px 15px;
 }
 .navbar-btn {
   margin-top: 15.5px;
@@ -751,13 +751,10 @@ legal a:hover {
 	color: #333;
 }
 .navbar-nav li#search .search-box {
-	position: absolute;
 	right: 0;
-	bottom: -70px;
-	width: 250px;
-	padding: 10px;
-	background: #777;
-	background: rgba(0, 0, 0, 0.5);
+	width: 200px;
+	padding-top: 15px;
+	margin-left: 10px;
 }
 .margin-2 {
 	margin-left: 2px;
@@ -1541,4 +1538,28 @@ footer .sbtn {
     transition: color 0.3s;
     -webkit-transition: color 0.3s;
     -moz-transition: color 0.3s;
+}
+
+/* Login Header*/
+
+li.account {
+	padding: 10px 20px;
+	overflow: hidden;
+	min-width: 350px;
+}
+li.account .avatar {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 0 20px 0 0;
+	background: url(default_avatar.jpg) no-repeat center center;
+	/*background: url(images/default_avatar.jpg);*/
+	background-size: cover;
+	background-position: center;
+}
+li.account p{
+	overflow: hidden;
+	font-size: 14px;
+	text-transform: none;
+	word-wrap: break-word;
 }
