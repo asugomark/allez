@@ -1,6 +1,10 @@
+2014-03-18 18:22:03 +0300 samuelralak 
+
+	* added fontawesome svg file and associated style sheets #4 (HEAD, feature/4-user-sign-in)
+
 2014-03-18 18:21:03 +0300 samuelralak 
 
-	* created the users controller and asscoiated files #4 (HEAD, feature/4-user-sign-in)
+	* created the users controller and asscoiated files #4
 
 2014-03-17 16:03:28 +0300 samuelralak 
 
