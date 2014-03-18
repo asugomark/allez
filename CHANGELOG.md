@@ -1,3 +1,7 @@
+2014-03-18 23:05:59 +0300 samuelralak 
+
+	* deleted git conflict resolution mark up (HEAD, master)
+
 2014-03-18 18:24:55 +0300 samuelralak 
 
 	* fixes #4 (origin/feature/4-user-sign-in, feature/4-user-sign-in)
@@ -64,7 +68,7 @@
 
 2014-03-16 18:26:16 +0300 samuelralak 
 
-	* precompile assets on production (origin/master, heroku/master)
+	* precompile assets on production (heroku/master)
 
 2014-03-16 18:20:05 +0300 samuelralak 
 
