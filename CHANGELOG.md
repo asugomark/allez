@@ -1,10 +1,14 @@
+2014-03-18 18:21:03 +0300 samuelralak 
+
+	* created the users controller and asscoiated files #4 (HEAD, feature/4-user-sign-in)
+
 2014-03-17 16:03:28 +0300 samuelralak 
 
-	* created the account type model, associated files and seed data #4 (HEAD, feature/4-user-sign-in)
+	* created the account type model, associated files and seed data #4 (origin/feature/4-user-sign-in)
 
 2014-03-17 04:50:36 +0300 samuelralak 
 
-	* styled the sign up page #4 (origin/feature/4-user-sign-in)
+	* styled the sign up page #4
 
 2014-03-16 21:55:19 +0300 samuelralak 
 
