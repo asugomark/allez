@@ -1,1 +1,11 @@
-<%= @user.name %>
+<%= render 'shared/section_headers' %>
+
+<div class="container">
+	<div class="row">
+
+		<%= render 'shared/messages', flash: flash %>
+
+		<%= @user.name %>	
+
+	</div>
+</div>

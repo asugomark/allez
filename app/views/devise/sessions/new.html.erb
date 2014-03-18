@@ -1,16 +1,10 @@
-<!-- Page tip -->
-<div class="page-tip animated slideInDown">
-	<div class="container">
-	    <div class="row">
-		  	<div class="col-sm-12">
-				<p>Please sign in before you proceed. If you are not a member, <%= link_to 'create an account', new_user_registration_path %>.</p>
-		  	</div>
-		</div>
-	</div>
-</div>
+<%= render 'shared/section_headers' %>
 
 <div class="container">
 	<div class="row">
+
+		<%= render 'shared/messages', flash: flash %>
+
 	    <div class="col-md-8 col-sm-6">
 		  	<h3 class="hl top-zero">Sign in to <span class="logo">donebiz</span>com</h3>
 		  	<hr>
@@ -35,6 +29,7 @@
 				<hr>
 				
 				<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+
 
 			  		<div class="form-group">
 			    		<%= f.label :email, options={class: "sr-only", for: "exampleInputEmail1"} %>
@@ -61,7 +56,7 @@
 
 				<hr>
 				
-				<%= render "devise/shared/links" %>
+				<%= render "shared/links" %>
 
 		  	</div>
 		</div>

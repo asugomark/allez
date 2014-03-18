@@ -1,6 +1,10 @@
+2014-03-18 23:11:24 +0300 samuelralak 
+
+	* Refactored section-header and page tip (HEAD, master)
+
 2014-03-18 23:05:59 +0300 samuelralak 
 
-	* deleted git conflict resolution mark up (HEAD, master)
+	* deleted git conflict resolution mark up
 
 2014-03-18 18:24:55 +0300 samuelralak 
 
