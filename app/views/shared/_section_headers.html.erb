@@ -1,10 +1,11 @@
-<% if controller_name != 'sessions' && controller_name != 'registrations' && controller_name != 'confirmations' && controller_name != 'passwords' %>
-	
-	<!-- Section Header -->
+<!-- Section Header -->
 	<div class="section-header">
 		<div class="container">
 	    	<div class="row">
 	      		<div class="col-md-12">
+
+
+				<% if controller_name != 'sessions' && controller_name != 'registrations' && controller_name != 'confirmations' && controller_name != 'passwords' %>
 
 	      			<% if controller_name == 'static_pages' %>
 						<h1>
@@ -20,33 +21,34 @@
 						
 					<% end %>
 
-		  		</div>
-			</div>
-	  	</div>
-    </div>
 
-<% else %>
-	<!-- Page tip -->
-	<div class="page-tip">
-		<div class="container">
-	    	<div class="row">
-		  		<div class="col-sm-12">
+				<% else %>
+	
 
-		  			<% if current_page?(controller: 'devise/sessions', action: 'new') %>
-						<p>
-							Please sign in before you proceed. If you are not a member, <%= link_to 'create an account', new_user_registration_path %>.
-						</p>
+		  			<% if current_page?('/signin') || controller_name == 'sessions'%>
+						
+						Please sign in before you proceed. If you are not a member, <%= link_to 'create an account', new_user_registration_path %>.
+
+					
 					<% end %>
 
-					<% if current_page?(controller: 'devise/registrations', action: 'new') %>
-						<p>
-							<p>Please sign up to access all our features. Already a member? <%= link_to 'sign in here', new_user_session_path %>.</p>
-						</p>
+					<% if controller_name == 'registrations' %>
+						
+						<% if action_name != 'new' && action_name != 'create' %>
+
+							<!-- Whats next? -->
+
+						<% else %>
+
+							Please sign up to access all our features. Already a member? <%= link_to 'sign in here', new_user_session_path %>.
+
+						<% end %>
+						
 					<% end %>
 
-		  		</div>
+		  		<% end %>
+
 			</div>
 		</div>
 	</div>
-
-<% end %>
+</div>

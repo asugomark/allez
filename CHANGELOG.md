@@ -1,6 +1,10 @@
+2014-03-19 14:47:08 +0300 samuelralak 
+
+	* refactored this file further (HEAD, master)
+
 2014-03-18 23:13:05 +0300 samuelralak 
 
-	* styled devise error messages, alerts and notices (HEAD, master)
+	* styled devise error messages, alerts and notices (origin/master, heroku/master)
 
 2014-03-18 23:12:31 +0300 samuelralak 
 
@@ -80,7 +84,7 @@
 
 2014-03-16 18:26:16 +0300 samuelralak 
 
-	* precompile assets on production (heroku/master)
+	* precompile assets on production
 
 2014-03-16 18:20:05 +0300 samuelralak 
 
