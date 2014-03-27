@@ -1,10 +1,14 @@
+2014-03-27 16:03:38 +0300 samuelralak 
+
+	* added a slug to users (HEAD, develop)
+
 2014-03-27 15:59:46 +0300 samuelralak 
 
-	* added a before_action filter for update and edit #10 (HEAD, feature/10-security)
+	* added a before_action filter for update and edit #10 (feature/10-security)
 
 2014-03-27 15:53:21 +0300 samuelralak 
 
-	* installed paperclip and friendly id gems (develop)
+	* installed paperclip and friendly id gems
 
 2014-03-19 14:47:08 +0300 samuelralak 
 
