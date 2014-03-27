@@ -1,6 +1,10 @@
+2014-03-27 16:08:28 +0300 samuelralak 
+
+	* create friendly_id slugs (HEAD, develop)
+
 2014-03-27 16:03:38 +0300 samuelralak 
 
-	* added a slug to users (HEAD, develop)
+	* added a slug to users
 
 2014-03-27 15:59:46 +0300 samuelralak 
 
