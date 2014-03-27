@@ -1,10 +1,14 @@
+2014-03-27 15:53:21 +0300 samuelralak 
+
+	* installed paperclip and friendly id gems (HEAD, develop)
+
 2014-03-19 14:47:08 +0300 samuelralak 
 
-	* refactored this file further (HEAD, master)
+	* refactored this file further (origin/master, origin/develop, heroku/master, master)
 
 2014-03-18 23:13:05 +0300 samuelralak 
 
-	* styled devise error messages, alerts and notices (origin/master, heroku/master)
+	* styled devise error messages, alerts and notices
 
 2014-03-18 23:12:31 +0300 samuelralak 
 
