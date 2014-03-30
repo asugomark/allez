@@ -1,10 +1,30 @@
+2014-03-30 21:04:40 +0300 samuelralak 
+
+	* fixes #8, fixes #9 (HEAD, develop)
+
+2014-03-27 16:08:28 +0300 samuelralak 
+
+	* create friendly_id slugs
+
+2014-03-27 16:03:38 +0300 samuelralak 
+
+	* added a slug to users
+
+2014-03-27 15:59:46 +0300 samuelralak 
+
+	* added a before_action filter for update and edit #10 (feature/10-security)
+
+2014-03-27 15:53:21 +0300 samuelralak 
+
+	* installed paperclip and friendly id gems
+
 2014-03-19 14:47:08 +0300 samuelralak 
 
-	* refactored this file further (HEAD, master)
+	* refactored this file further (origin/master, origin/develop, heroku/master, master)
 
 2014-03-18 23:13:05 +0300 samuelralak 
 
-	* styled devise error messages, alerts and notices (origin/master, heroku/master)
+	* styled devise error messages, alerts and notices
 
 2014-03-18 23:12:31 +0300 samuelralak 
 

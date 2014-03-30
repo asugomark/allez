@@ -1,8 +1,8 @@
 <!-- Section Header -->
-	<div class="section-header">
-		<div class="container">
-	    	<div class="row">
-	      		<div class="col-md-12">
+<div class="section-header">
+	<div class="container">
+	   <div class="row">
+	      	<div class="col-md-12">
 
 
 				<% if controller_name != 'sessions' && controller_name != 'registrations' && controller_name != 'confirmations' && controller_name != 'passwords' %>
@@ -17,6 +17,14 @@
 
 						<h1>
 							<span>Profile</span>
+						</h1>
+						
+					<% end %>
+
+					<% if controller_name == "avatars" %>
+
+						<h1>
+							<span>Avatar</span>
 						</h1>
 						
 					<% end %>
@@ -36,7 +44,11 @@
 						
 						<% if action_name != 'new' && action_name != 'create' %>
 
-							<!-- Whats next? -->
+							<% if action_name == 'edit' %>
+								<h1>
+									<span>Edit Profile</span>
+								</h1>
+							<% end %>
 
 						<% else %>
 

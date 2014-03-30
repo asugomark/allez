@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @avatar.user.name %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%= image_tag @avatar.avatar.url(:medium) %>
+</p>
+
+<%= link_to 'Edit', edit_user_avatar_path(@user, @avatar) %> |
+<%= link_to 'Back', user_avatars_path(@user) %>

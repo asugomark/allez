@@ -1,0 +1,52 @@
+<%= render 'shared/messages', flash: flash %>
+<%= form_for([@user, @avatar]) do |f| %>
+	<% if @avatar.errors.any? %>
+    	<div id="error_explanation" class="alert alert-danger alert-block">
+      		<h5><%= pluralize(@avatar.errors.count, "error") %> prohibited this avatar from being saved:</h5>
+
+      		<ul>
+      			<% @avatar.errors.full_messages.each do |msg| %>
+        			<li><%= msg %></li>
+      			<% end %>
+      		</ul>
+    	</div>
+  	<% end %>
+
+  	<div class="col-md-6">
+
+  		<div class="avatar">
+			<a href="#" class="thumbnail bottom-15" data-toggle="modal" data-target="#upload-avatar">
+
+			<% if @user.avatar.nil? %>
+				<%= image_tag('default_avatar.jpg', options={class: "img-responsive imageborder", width: "100%", height: "100%"}) %>
+			<% else %>
+
+				<%= image_tag(@avatar.avatar.url, options={class: "img-responsive imageborder", width: "100%", height: "100%"}) %>
+			<% end %>
+
+
+			<div class="avatar-bubble">
+				<a href="#" data-toggle="modal" data-target="#upload-avatar"><i class="fa fa-plus"></i> New avatar</a>
+			</div>
+		</div>
+  	</div>
+
+  	<div class="col-md-3">
+  		<!--
+  		<div class="field">
+    		<%#= f.label :user_id %><br>
+    		<%#= f.text_field :user_id %>
+  		</div>
+  		-->
+
+  		<div class="form-group">
+    		<%= f.file_field :avatar %>
+  		</div>
+
+  		<div>
+    		<%= f.submit "Update Avatar", class: "btn btn-block btn-info" %>
+  		</div>
+
+  	</div>
+  	
+<% end %>
