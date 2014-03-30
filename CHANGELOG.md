@@ -1,6 +1,10 @@
+2014-03-30 21:48:00 +0300 samuelralak 
+
+	* handle active record not found error (HEAD, master)
+
 2014-03-30 21:40:55 +0300 samuelralak 
 
-	* rescue from active record not found error (HEAD, master)
+	* rescue from active record not found error (origin/master, heroku/master)
 
 2014-03-30 21:04:40 +0300 samuelralak 
 
@@ -24,7 +28,7 @@
 
 2014-03-19 14:47:08 +0300 samuelralak 
 
-	* refactored this file further (origin/master)
+	* refactored this file further
 
 2014-03-18 23:13:05 +0300 samuelralak 
 
