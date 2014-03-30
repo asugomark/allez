@@ -1,6 +1,10 @@
+2014-03-30 21:04:40 +0300 samuelralak 
+
+	* fixes #8, fixes #9 (HEAD, develop)
+
 2014-03-27 16:08:28 +0300 samuelralak 
 
-	* create friendly_id slugs (HEAD, develop)
+	* create friendly_id slugs
 
 2014-03-27 16:03:38 +0300 samuelralak 
 

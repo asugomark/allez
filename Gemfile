@@ -25,6 +25,8 @@ gem 'friendly_id', '~> 5.0.0'
 
 gem "paperclip", "~> 4.1"
 
+#gem "mercury-rails"
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
