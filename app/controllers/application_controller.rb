@@ -25,17 +25,17 @@ class ApplicationController < ActionController::Base
 
   	if !@user.nil?
 
-  		puts "### CONTROLLER: #{params[:controller]}"
-  		puts "### ACTION: #{params[:action]}"
+  		logger.info "### CONTROLLER: #{params[:controller]}"
+  		logger.info "### ACTION: #{params[:action]}"
 
   		if params[:action] == "update" && params[:controller] == "devise/registrations"
-  			puts "### We on the IF condition"
+  			logger.info "### We on the IF condition"
 
   			@user = User.find(session["warden.user.user.key"][0])
   			@avatar = Avatar.find_by(user_id: @user)
 	
   		else
-  			puts "### We are now running the ELSE condition"
+  			logger.info "### We are now running the ELSE condition"
 
   			@user = User.find(params[:id])   
       		@avatar = @user.avatar.find(params[:id])

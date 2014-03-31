@@ -1,10 +1,14 @@
+2014-03-31 21:59:47 +0300 samuelralak 
+
+	* added logger.info (HEAD, master)
+
 2014-03-30 21:48:00 +0300 samuelralak 
 
-	* handle active record not found error (HEAD, master)
+	* handle active record not found error (origin/master, heroku/master)
 
 2014-03-30 21:40:55 +0300 samuelralak 
 
-	* rescue from active record not found error (origin/master, heroku/master)
+	* rescue from active record not found error
 
 2014-03-30 21:04:40 +0300 samuelralak 
 

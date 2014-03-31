@@ -12,6 +12,7 @@ class AvatarsController < ApplicationController
   # GET /avatars/1
   # GET /avatars/1.json
   def show
+  	logger.info "### Selecting AVATARS in AvatarsController#show"
   	@avatar = @user.avatar.find(params[:id])
   end
 
@@ -24,7 +25,7 @@ class AvatarsController < ApplicationController
 
   # GET /avatars/1/edit
   def edit
-
+  	logger.info "### Selecting AVATARS in AvatarsController#edit"
   	@avatar = @user.avatar.find(params[:id])
 
   end
@@ -48,14 +49,16 @@ class AvatarsController < ApplicationController
   # PATCH/PUT /avatars/1
   # PATCH/PUT /avatars/1.json
   def update
-
+  	logger.info "### Begin Update AvatarsController#update"
   	@avatar = @user.avatar.find(params[:id])
 
     respond_to do |format|
+      logger.info "### Updating AVATARS in AvatarsController#update"
       if @avatar.update(avatar_params)
         format.html { redirect_to edit_user_avatar_path(@user, @avatar), notice: 'Avatar was successfully updated.' }
         format.json { head :no_content }
       else
+      	logger.info "### Failed to update AVATARS in AvatarsController#update"
         format.html { render action: 'edit' }
         format.json { render json: @avatar.errors, status: :unprocessable_entity }
       end
@@ -75,13 +78,18 @@ class AvatarsController < ApplicationController
   private
 
   	def load_parent
-      @user = User.find(params[:user_id])   
+  		logger.info "### Loading USERS in load_parent method AvatarsController"
+
+      	@user = User.find(params[:user_id])   
     end
 
     # Use callbacks to share common setup or constraints between actions.
     def set_avatar
-      @user = User.find(params[:user_id])   
-      @avatar = @user.avatar.find(params[:id])
+    	logger.info "### Selecting USERS in set_avatar method AvatarsController"
+      	@user = User.find(params[:user_id]) 
+
+      	logger.info "### Loading AVATARS in load_parent method AvatarsController"  
+      	@avatar = @user.avatar.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
