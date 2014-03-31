@@ -1,10 +1,14 @@
+2014-03-31 22:35:02 +0300 samuelralak 
+
+	* correct count avatars method on users show (HEAD, master)
+
 2014-03-31 22:13:23 +0300 samuelralak 
 
-	* count avatars method on users show (HEAD, master)
+	* count avatars method on users show (origin/master, heroku/master)
 
 2014-03-31 21:59:47 +0300 samuelralak 
 
-	* added logger.info (origin/master, heroku/master)
+	* added logger.info
 
 2014-03-30 21:48:00 +0300 samuelralak 
 
