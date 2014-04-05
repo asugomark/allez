@@ -1,0 +1,66 @@
+<!-- Section Header -->
+<div class="section-header">
+	<div class="container">
+	   <div class="row">
+	      	<div class="col-md-12">
+
+
+				<% if controller_name != 'sessions' && controller_name != 'registrations' && controller_name != 'confirmations' && controller_name != 'passwords' %>
+
+	      			<% if controller_name == 'static_pages' %>
+						<h1>
+							<span><%= action_name %></span>
+						</h1>
+					<% end %>
+
+					<% if current_page?(controller: 'users', action: 'show') %>
+
+						<h1>
+							<span>Profile</span>
+						</h1>
+						
+					<% end %>
+
+					<% if controller_name == "avatars" %>
+
+						<h1>
+							<span>Avatar</span>
+						</h1>
+						
+					<% end %>
+
+
+				<% else %>
+	
+
+		  			<% if current_page?('/signin') || controller_name == 'sessions'%>
+						
+						Please sign in before you proceed. If you are not a member, <%= link_to 'create an account', new_user_registration_path %>.
+
+					
+					<% end %>
+
+					<% if controller_name == 'registrations' %>
+						
+						<% if action_name != 'new' && action_name != 'create' %>
+
+							<% if action_name == 'edit' %>
+								<h1>
+									<span>Edit Profile</span>
+								</h1>
+							<% end %>
+
+						<% else %>
+
+							Please sign up to access all our features. Already a member? <%= link_to 'sign in here', new_user_session_path %>.
+
+						<% end %>
+						
+					<% end %>
+
+		  		<% end %>
+
+			</div>
+		</div>
+	</div>
+</div>

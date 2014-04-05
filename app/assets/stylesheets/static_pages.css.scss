@@ -1,3 +1,180 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Settings Menu */
+
+.user-menu > ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.user-menu > ul > li {
+	border-bottom: 1px solid #EEE;
+	border-right: 1px solid #EEE;
+}
+.user-menu > ul > li:last-child {
+	border-bottom: 0;
+}
+.user-menu > ul > li > a {
+	display: block;
+	padding: 10px;
+}
+.user-menu > ul > li > a:hover {
+	text-decoration: none;
+	background: #f5f5f5;
+}
+.user-menu > ul > li > a.active {
+	background: #f5f5f5;
+}
+.user-menu > ul > li > a > i.sign {
+	display: inline-block;
+	margin-right: 10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 40px;
+	color: #FFF;
+	text-align: center;
+	font-size: 18px;
+	line-height: 40px;
+}
+.user-menu > ul > li > a > i.fa-chevron-right {
+	line-height: 40px;
+	color: #515151;
+	display: none;
+}
+.user-menu > ul > li > a:hover > i.fa-chevron-right {
+	display: inline-block;
+}
+.user-menu > ul > li > a.active:hover > i.fa-chevron-right {
+	display: none;
+}
+
+/* User status */
+
+.user-status {
+	margin-bottom: 20px;
+}
+.user-status > p > a {
+	color: #333;
+}
+.user-status .input-group{
+	padding: 5px;
+	background: #f5f5f5;
+}
+
+/* Modal window */
+
+.modal-content {
+	border-radius: 0;
+}
+.modal-header {
+	background: #f5f5f5;
+}
+.modal-header > img, 
+.message-answer > img {
+	height: 50px;
+	width: 50px;
+	margin: 0 15px 15px 0;
+	float: left;
+	overflow: hidden;
+}
+
+/* User Stats and Gallery */
+
+.block-inverse {
+	border-radius: 5px;
+	border: 1px solid #eee;
+}
+.block-inverse > .head-inverse {
+	background: #F5F5F5;
+	padding: 10px;
+	border-bottom: 1px solid #EEE;
+}
+.block-inverse > .body-inverse {
+	padding: 10px;
+}
+.user-gallery img {
+	height: 60px;
+	width: 60px;
+	background: #FFF;
+	border: 1px solid #dedede;
+	border-radius: 60px;
+	padding: 3px;
+	margin: 5px;
+}
+.user-gallery img:hover {
+    border-color: #999;
+}
+
+/* Inbox */
+
+.pm-search {
+	background: #F5F5F5;
+	border-top: 1px solid #DDD;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+.pm-list > ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.pm-list > ul > li:first-child {
+	border-top: 1px solid #EEE;
+}
+.pm-list > ul > li {
+	padding: 15px;
+	border-bottom: 1px solid #EEE;
+}
+.pm-list > ul > li:hover {
+	background: #f5f5f5;
+}
+.pm-list > ul > li > p > img {
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin-right: 15px;
+	overflow: hidden;
+}
+.pm-list > ul > li > p {
+	float: left;
+	overflow: hidden;
+	width: 50%;
+	margin-bottom: 0;
+}
+.pm-list > ul > li > p > a.inbox-dialog {
+	color: #999;
+}
+.pm-list > ul > li > p > a.inbox-dialog:hover {
+	color: #999;
+	text-decoration: none;
+}
+.message-answer {
+	background: #F5F5F5;
+	border-top: 1px solid #DDD;
+	padding: 20px;
+}
+.message-answer > form {
+	width: 80%;
+	float: left;
+}	
+
+/* Background colors */
+
+.bg-green {
+	background-color: #72a53b;
+}
+.bg-blue {
+	background-color: #00B4FF;
+}
+.bg-red {
+	background-color: #E74C3C;
+}
+.bg-turquoise {
+	background-color: #1ABC9C;
+}
+.bg-amethyst {
+	background-color: #9B59B6;
+}
+
