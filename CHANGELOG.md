@@ -1,10 +1,14 @@
+2014-04-06 19:57:19 +0300 samuelralak 
+
+	* finding avatar by current user id (HEAD, master)
+
 2014-04-06 19:49:18 +0300 samuelralak 
 
-	* changed return link avatars#create controller (HEAD, master)
+	* changed return link avatars#create controller (origin/master, heroku/master)
 
 2014-04-06 19:43:45 +0300 samuelralak 
 
-	* deleted return statement in users#show controler (origin/master, heroku/master)
+	* deleted return statement in users#show controler
 
 2014-04-06 19:30:18 +0300 samuelralak 
 
