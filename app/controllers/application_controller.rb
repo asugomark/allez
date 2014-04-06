@@ -23,39 +23,26 @@ class ApplicationController < ActionController::Base
 
   def build_avatar
 
-    logger.info "### Is User object present: #{@user.present?}"
-    if @user.present? 
+  	if !@user.nil?
 
-      logger.info "### If true, check for Avatars with current_user ID"
-      if Avatar.where(:user_id => current_user.id).blank?
+  		puts "### CONTROLLER: #{params[:controller]}"
+  		puts "### ACTION: #{params[:action]}"
 
-        logger.info "### No Avatar was found for the current_user"
-      else
+  		if params[:action] == "update" && params[:controller] == "devise/registrations"
+  			puts "### We on the IF condition"
 
-        logger.info "### An Avatar was found for this user, Load it"
-        @avatar = @user.avatar.find(params[:id])
-      end
+  			@user = User.find(session["warden.user.user.key"][0])
+  			@avatar = Avatar.find_by(user_id: @user)
+	
+  		else
+  			puts "### We are now running the ELSE condition"
 
-    logger.info "### Check for session: #{session.present?}"
-    elsif session.present? && @user.blank?
+  			@user = User.find(params[:id])   
+      		@avatar = @user.avatar.find(params[:id])
+  			
+  		end
 
-      logger.info "### If true, fetch user from session"
-      @user = User.find(session["warden.user.user.key"][0])
-
-      logger.info "### Checkif we have an Avatar for this user"
-      if Avatar.where(:user_id => @user).blank?
-      
-        logger.info "### We do not have an avatar for this User"
-
-      else
-
-        logger.info "### An Avatar was found for this User"
-        @avatar = Avatar.find_by(user_id: @user)
-      end
-    
-    else
-
-    end
+  	end
   	
   end
 

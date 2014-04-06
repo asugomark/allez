@@ -12,7 +12,7 @@
 			</li>
 
 			<li> 			
-			  	<% if @avatar.blank? %>
+			  	<% if @user.avatar.nil? %>
 
 				    <a href=<%= new_user_avatar_path(current_user) %>  >
 					  	<i class="sign fa fa-user bg-green"></i> 
@@ -21,8 +21,8 @@
 					</a>
 
 				<% else %>
-					<% logger.info "### Avatar object #{@avatar.present?}" %>
-					<a href=<%= edit_user_avatar_path(@user, @user.avatar) %>>
+
+					<a href=<%= edit_user_avatar_path(@user, @avatar) %>>
 					  	<i class="sign fa fa-user bg-green"></i> 
 					  		Avatar 
 					  	<i class="fa fa-chevron-right pull-right"></i>
