@@ -1,6 +1,22 @@
+2014-04-06 19:03:47 +0300 samuelralak 
+
+	* deleted username and password from database.yml (HEAD, develop)
+
 2014-04-06 18:57:21 +0300 samuelralak 
 
-	* styled the homepage and fixed handled nil onject exceptions (HEAD, master)
+	* styled the homepage and fixed handled nil onject exceptions (master)
+
+2014-04-06 16:37:14 +0300 asugomark 
+
+	* reverted changes from mark
+
+2014-04-05 18:25:06 +0300 asugomark 
+
+	* sorted nil object errors
+
+2014-04-05 16:50:22 +0300 asugomark 
+
+	* commented out the ruby version
 
 2014-03-31 22:38:50 +0300 samuelralak 
 
@@ -28,7 +44,7 @@
 
 2014-03-30 21:04:40 +0300 samuelralak 
 
-	* fixes #8, fixes #9 (origin/develop, develop)
+	* fixes #8, fixes #9
 
 2014-03-27 16:08:28 +0300 samuelralak 
 
@@ -153,6 +169,10 @@
 2014-03-13 22:33:24 +0300 samuelralak 
 
 	* configured routes for the sign in and sign up page #3
+
+2014-03-13 14:49:24 +0300 asugomark 
+
+	* changes from mark's computer
 
 2014-03-13 13:45:11 +0300 samuelralak 
 
