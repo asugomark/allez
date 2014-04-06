@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
       	else
 
         	logger.info "### An Avatar was found for this user, Load it"
-        	@avatar = Avatar.find_by(user_id: current_user.id)
+        	@avatar = Avatar.find_by(user_id: current_user)
       	end
 
     logger.info "### Check for session: #{session.present?}"
