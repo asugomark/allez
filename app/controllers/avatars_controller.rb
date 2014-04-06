@@ -33,7 +33,7 @@ class AvatarsController < ApplicationController
   # POST /avatars
   # POST /avatars.json
   def create
-    @avatar = Avatar.new(avatar_params)
+    @avatar = @user.avatar.new(avatar_params)
 
     respond_to do |format|
       if @avatar.save

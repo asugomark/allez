@@ -1,10 +1,14 @@
+2014-04-06 19:26:06 +0300 samuelralak 
+
+	* added parent to avatars#create (HEAD, master)
+
 2014-04-06 19:03:47 +0300 samuelralak 
 
-	* deleted username and password from database.yml (HEAD, develop)
+	* deleted username and password from database.yml (origin/develop, develop)
 
 2014-04-06 18:57:21 +0300 samuelralak 
 
-	* styled the homepage and fixed handled nil onject exceptions (master)
+	* styled the homepage and fixed handled nil onject exceptions
 
 2014-04-06 16:37:14 +0300 asugomark 
 
@@ -20,7 +24,7 @@
 
 2014-03-31 22:38:50 +0300 samuelralak 
 
-	* corrected if condition (origin/master, heroku/master)
+	* corrected if condition
 
 2014-03-31 22:35:02 +0300 samuelralak 
 
