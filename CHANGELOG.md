@@ -1,6 +1,10 @@
+2014-04-06 19:30:18 +0300 samuelralak 
+
+	* fixed redirect url in avatars create action (HEAD, master)
+
 2014-04-06 19:26:06 +0300 samuelralak 
 
-	* added parent to avatars#create (HEAD, master)
+	* added parent to avatars#create (origin/master, heroku/master)
 
 2014-04-06 19:03:47 +0300 samuelralak 
 
