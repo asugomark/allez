@@ -1,10 +1,14 @@
+2014-04-06 20:07:12 +0300 samuelralak 
+
+	* finding avatart by user (HEAD, master)
+
 2014-04-06 20:03:38 +0300 samuelralak 
 
-	* finding avatart by current user (HEAD, master)
+	* finding avatart by current user (origin/master, heroku/master)
 
 2014-04-06 19:57:19 +0300 samuelralak 
 
-	* finding avatar by current user id (origin/master, heroku/master)
+	* finding avatar by current user id
 
 2014-04-06 19:49:18 +0300 samuelralak 
 
