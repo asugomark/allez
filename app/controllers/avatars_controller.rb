@@ -37,7 +37,7 @@ class AvatarsController < ApplicationController
 
     respond_to do |format|
       if @avatar.save
-        format.html { redirect_to [@user, @avatar], notice: 'Avatar was successfully created.' }
+        format.html { redirect_to new_user_avatar_path(current_user), notice: 'Avatar was successfully created.' }
         format.json { render action: 'show', status: :created, location: @avatar }
       else
         format.html { render action: 'new' }
