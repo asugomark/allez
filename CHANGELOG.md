@@ -1,10 +1,14 @@
+2014-04-06 18:57:21 +0300 samuelralak 
+
+	* styled the homepage and fixed handled nil onject exceptions (HEAD, master)
+
 2014-03-31 22:38:50 +0300 samuelralak 
 
-	* corrected if condition (HEAD, master)
+	* corrected if condition (origin/master, heroku/master)
 
 2014-03-31 22:35:02 +0300 samuelralak 
 
-	* correct count avatars method on users show (origin/master, heroku/master)
+	* correct count avatars method on users show
 
 2014-03-31 22:13:23 +0300 samuelralak 
 
