@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   		logger.info "### Avatars count: #{@user.avatar.count}"
   		@avatar_count = @user.avatar.count
   		flash[:notice] = 'The object you tried to access does not exist'
-  		return   # or e.g. redirect_to :action => :index
+  		#return   # or e.g. redirect_to :action => :index
 	end
 
   end
