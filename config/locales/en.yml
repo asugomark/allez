@@ -21,3 +21,14 @@
 
 en:
   hello: "Hello world"
+
+  activerecord:
+    attributes:
+      user:
+        agree: "Terms of service and Privacy Policy"
+    errors:
+      models:
+        user:
+          attributes:
+            agree:
+              blank: "must be accepted"
