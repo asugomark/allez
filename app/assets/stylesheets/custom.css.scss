@@ -18,6 +18,10 @@ body {
 	background: #ecf0f1;
 }
 
+.row {
+	margin-left: -15px;
+ 	margin-right: 0; 
+}
 /* ===== Sticky Footer Trick ===== */
 
 .wrapper {
@@ -1049,7 +1053,7 @@ a.carousel-arrow-next {
 .crp-showcase {
 	width: 100%;
 	margin-top: -30px;
-	margin-bottom: 100px;
+	margin-bottom: 20px;
 	padding-top: 50px;
 	padding-bottom: 200px;
 	background: url(photo.jpg) no-repeat center center;
