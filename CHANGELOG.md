@@ -1,10 +1,14 @@
+2014-05-03 11:35:54 +0300 samuelralak 
+
+	* fixed empty class error (HEAD, master)
+
 2014-04-06 20:07:12 +0300 samuelralak 
 
-	* finding avatart by user (HEAD, master)
+	* finding avatart by user (origin/master, heroku/master)
 
 2014-04-06 20:03:38 +0300 samuelralak 
 
-	* finding avatart by current user (origin/master, heroku/master)
+	* finding avatart by current user
 
 2014-04-06 19:57:19 +0300 samuelralak 
 

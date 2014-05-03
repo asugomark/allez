@@ -33,24 +33,30 @@ class ApplicationController < ActionController::Base
       	else
 
         	logger.info "### An Avatar was found for this user, Load it"
-        	@avatar = Avatar.find_by(user_id: @user)
+        	@avatar = @user.avatar.find(params[:id])
       	end
 
     logger.info "### Check for session: #{session.present?}"
     elsif session.present? && @user.blank?
 
-      	logger.info "### If true, fetch user from session"
-      	@user = User.find(session["warden.user.user.key"][0])
 
-      	logger.info "### Checkif we have an Avatar for this user"
-      	if Avatar.where(:user_id => @user).blank?
+    	logger.info "### Check for User: #{session["warden.user.user.key"].nil?}"
+    	if !session["warden.user.user.key"].nil?
+
+      		logger.info "### If true, fetch user from session"
+      		@user = User.find(session["warden.user.user.key"][0])
+
+      		logger.info "### Checkif we have an Avatar for this user"
+      		if Avatar.where(:user_id => @user).blank?
       
-        	logger.info "### We do not have an avatar for this User"
+        		logger.info "### We do not have an avatar for this User"
 
-      	else
+      		else
 
-        	logger.info "### An Avatar was found for this User"
-        	@avatar = Avatar.find_by(user_id: @user)
+        		logger.info "### An Avatar was found for this User"
+        		@avatar = Avatar.find_by(user_id: @user)
+      		end
+
       	end
     
     else
